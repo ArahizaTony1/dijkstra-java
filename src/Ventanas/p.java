@@ -18,13 +18,14 @@ public class p extends javax.swing.JFrame {
     /**
      * Creates new form p
      */
-    public p(String n) {
+    public p(String n,String n1) {
         initComponents();
          this.setLocationRelativeTo(null);
         ImageIcon imagen = new ImageIcon(n);
         Icon icono = new ImageIcon(imagen.getImage().getScaledInstance(jLabel1.getWidth(), jLabel1.getHeight(),Image.SCALE_DEFAULT));
         jLabel1.setIcon(icono);
         this.repaint();
+        jLabel2.setText(n1);
     }
 
     private p() {
