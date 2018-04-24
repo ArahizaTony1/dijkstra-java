@@ -403,40 +403,64 @@ public static int ingresarNodoOrigen(String nodoOrige, String noExiste,int tope)
             jLabel5.setText(""+Dijkstra.getAcumulado());
             jLabel6.setText(""+permanente);
             jLabel1.setText(""+nodoFin);
-            
+           
             if(nodoFin==1  && Dijkstra.validar()==true && permanente!=nodoFin){
                valor="/home/arahiza/NetBeansProjects/proyectofinal/imagenes/Catedral_Guadalajara.jpg";
                 titulo="Catedral de Guadalajara";
                 p n = new p(valor);
                 n.setVisible(true);
             }
-             
             if(nodoFin==2  && Dijkstra.validar()==true && permanente!=nodoFin){
                 valor="/home/arahiza/NetBeansProjects/proyectofinal/imagenes/loscolomos.png";
                 titulo="Catedral de Guadalajara";
                 p n = new p(valor);
                 n.setVisible(true);
-                
-                
-            }if(nodoFin==3  && Dijkstra.validar()==true && permanente!=nodoFin){
-            
+            }  
+            if(nodoFin==3  && Dijkstra.validar()==true && permanente!=nodoFin){
+                valor="/home/arahiza/NetBeansProjects/proyectofinal/imagenes/mercado.jpg";
+                titulo="Catedral de Guadalajara";
+                p n = new p(valor);
+                n.setVisible(true);
             }if(nodoFin==4  && Dijkstra.validar()==true && permanente!=nodoFin){
-            
+                valor="/home/arahiza/NetBeansProjects/proyectofinal/imagenes/museociudad.jpg";
+                titulo="Catedral de Guadalajara";
+                p n = new p(valor);
+                n.setVisible(true);
             }if(nodoFin==5  && Dijkstra.validar()==true && permanente!=nodoFin){
-            
+                valor="/home/arahiza/NetBeansProjects/proyectofinal/imagenes/museo.jpg";
+                titulo="Catedral de Guadalajara";
+                p n = new p(valor);
+                n.setVisible(true);
             }if(nodoFin==6  && Dijkstra.validar()==true && permanente!=nodoFin){
-            
+                valor="/home/arahiza/NetBeansProjects/proyectofinal/imagenes/parquedos.jpg";
+                titulo="Catedral de Guadalajara";
+                p n = new p(valor);
+                n.setVisible(true);
             }if(nodoFin==7  && Dijkstra.validar()==true && permanente!=nodoFin){
-            
+                valor="/home/arahiza/NetBeansProjects/proyectofinal/imagenes/periodismo.jpg";
+                titulo="Catedral de Guadalajara";
+                p n = new p(valor);
+                n.setVisible(true);
             }if(nodoFin==8  && Dijkstra.validar()==true && permanente!=nodoFin){
-            
+                valor="/home/arahiza/NetBeansProjects/proyectofinal/imagenes/selvamagica.jpg";
+                titulo="Catedral de Guadalajara";
+                p n = new p(valor);
+                n.setVisible(true);
             }if(nodoFin==9  && Dijkstra.validar()==true && permanente!=nodoFin){
-            
+                valor="/home/arahiza/NetBeansProjects/proyectofinal/imagenes/universidad.jpg";
+                titulo="Catedral de Guadalajara";
+                p n = new p(valor);
+                n.setVisible(true);
             }if(nodoFin==0  && Dijkstra.validar()==true && permanente!=nodoFin){
-            
-            }else{
-                valor="";
+                valor="/home/arahiza/NetBeansProjects/proyectofinal/imagenes/zologico.jpg";
+                titulo="Catedral de Guadalajara";
+                p n = new p(valor);
+                n.setVisible(true);
+            }if(Dijkstra.validar()==false || permanente==nodoFin){
+             JOptionPane.showMessageDialog(null,"Favor de revisar bien ");
             }
+            
+            
         }
     else JOptionPane.showMessageDialog(null,"Se deben de crear mas nodos ... ");
     
