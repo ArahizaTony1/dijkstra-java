@@ -11,11 +11,11 @@ package Clases;
  * @author fredy_000
  */
 public class Arboles {
-   private int mCoeficiente[][] = new int [51][51];
-   private int mAdyacencia [][] = new int [51][51];
-   private int cordeX [] = new int [51];
-   private int cordeY [] = new int [51];
-   private int nombre [] = new int [51];
+   private int mCoeficiente[][] = new int [11][11];
+   private int mAdyacencia [][] = new int [11][11];
+   private int cordeX [] = new int [11];
+   private int cordeY [] = new int [11];
+   private int nombre [] = new int [11];
    private int enArbol [];
    
    

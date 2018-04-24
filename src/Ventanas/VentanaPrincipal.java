@@ -476,8 +476,8 @@ public static int ingresarNodoOrigen(String nodoOrige, String noExiste,int tope)
             }if(Dijkstra.validar()==false || permanente==nodoFin){
              System.out.println(""+Dijkstra.validar());
              JOptionPane.showMessageDialog(null,"Favor de revisar bien ");
-            jLabel6.setText("NO ");
-            jLabel1.setText("NO");
+            jLabel6.setText("No se puede ");
+            jLabel1.setText("No se puede");
             }
             
             
@@ -588,7 +588,7 @@ public static int ingresarNodoOrigen(String nodoOrige, String noExiste,int tope)
     }//GEN-LAST:event_jButton5ActionPerformed
 
     private void jButton6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton6ActionPerformed
-       String name = JOptionPane.showInputDialog(null, "adyacente = 1 o coeficientes = 2");
+       String name = JOptionPane.showInputDialog(null, "adyacente = 2 o coeficientes = 1");
        if(name.equals("1")){
            if(tope==0)
             JOptionPane.showMessageDialog(null,"Aun no se ha credo un nodo : ");
