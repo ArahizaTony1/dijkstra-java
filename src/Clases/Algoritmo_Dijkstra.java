@@ -98,7 +98,25 @@ public class Algoritmo_Dijkstra {
        }
        else Pintar.clickSobreNodo(jPanel1.getGraphics(), arboles.getCordeX(nodoFin), arboles.getCordeY(nodoFin), null,Color.GREEN);    
     }
+    public boolean validar(){
+     if(permanente != nodoFin){
+     
+     auxi= nodo[nodoFin]; 
+           if(auxi.getPredecesor() == null )
+             
+           
+          while(auxi.getPredecesor() != null){           
+              Pintar.pintarCamino(jPanel1.getGraphics(), arboles.getCordeX(auxi.getNombre()), arboles.getCordeY(auxi.getNombre()), arboles.getCordeX(auxi.getPredecesor().getNombre()), arboles.getCordeY(auxi.getPredecesor().getNombre()),Color.GREEN);
+              Pintar.clickSobreNodo(jPanel1.getGraphics(), arboles.getCordeX(auxi.getNombre()), arboles.getCordeY(auxi.getNombre()), null,Color.GREEN);
+             auxi=auxi.getPredecesor();              
+          }  
+         Pintar.clickSobreNodo(jPanel1.getGraphics(), arboles.getCordeX(nodoFin), arboles.getCordeY(nodoFin), null,Color.GREEN);     
+          return false;
+     }
+       else Pintar.clickSobreNodo(jPanel1.getGraphics(), arboles.getCordeX(nodoFin), arboles.getCordeY(nodoFin), null,Color.GREEN);
+     return false;
+    }
     
-    
- 
 }
+ 
+

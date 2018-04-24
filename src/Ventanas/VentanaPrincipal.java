@@ -317,7 +317,7 @@ public static int ingresarNodoOrigen(String nodoOrige, String noExiste,int tope)
        }
        else{
        if(!cicDerechoSobreNodo(xxx,yyy)){// si  clik sobre  nodo es falso entra
-          if(tope<50){
+          if(tope<11){
                arboles.setCordeX(tope,xxx);
                arboles.setCordeY(tope,yyy);
                arboles.setNombre(tope, tope);
@@ -385,6 +385,9 @@ public static int ingresarNodoOrigen(String nodoOrige, String noExiste,int tope)
             jLabel5.setText(""+Dijkstra.getAcumulado());
             jLabel6.setText(""+permanente);
             jLabel1.setText(""+nodoFin);
+            if(nodoFin==1  && Dijkstra.validar()==false){
+                System.out.println("prueba");
+            }
         }
     else JOptionPane.showMessageDialog(null,"Se deben de crear mas nodos ... ");
     
