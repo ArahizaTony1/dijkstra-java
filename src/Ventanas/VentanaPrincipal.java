@@ -140,8 +140,6 @@ public static int ingresarNodoOrigen(String nodoOrige, String noExiste,int tope)
         
         
         
-        
-        
     }    
     @SuppressWarnings("unchecked")
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
@@ -457,6 +455,7 @@ public static int ingresarNodoOrigen(String nodoOrige, String noExiste,int tope)
                 p n = new p(valor,titulo);
                 n.setVisible(true);
             }if(Dijkstra.validar()==false || permanente==nodoFin){
+             System.out.println(""+Dijkstra.validar());
              JOptionPane.showMessageDialog(null,"Favor de revisar bien ");
             
             }

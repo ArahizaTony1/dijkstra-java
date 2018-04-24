@@ -102,7 +102,7 @@ public class Algoritmo_Dijkstra {
      if(permanente != nodoFin){
      
      auxi= nodo[nodoFin]; 
-           if(auxi.getPredecesor() == null )
+           if(auxi.getPredecesor() == null ){
              
            
           while(auxi.getPredecesor() != null){           
@@ -112,11 +112,46 @@ public class Algoritmo_Dijkstra {
           }  
          Pintar.clickSobreNodo(jPanel1.getGraphics(), arboles.getCordeX(nodoFin), arboles.getCordeY(nodoFin), null,Color.GREEN);     
           return false;
+           }
+            if(auxi.getPredecesor() != null){
+            
+           return true;
+           }
      }
        else Pintar.clickSobreNodo(jPanel1.getGraphics(), arboles.getCordeX(nodoFin), arboles.getCordeY(nodoFin), null,Color.GREEN);
      return true;
     }
+//    public int validar2(){
+//      if(permanente != nodoFin){
+//     
+//     auxi= nodo[nodoFin]; 
+//           if(auxi.getPredecesor() == null ){
+//             
+//           
+//          while(auxi.getPredecesor() != null){           
+//              Pintar.pintarCamino(jPanel1.getGraphics(), arboles.getCordeX(auxi.getNombre()), arboles.getCordeY(auxi.getNombre()), arboles.getCordeX(auxi.getPredecesor().getNombre()), arboles.getCordeY(auxi.getPredecesor().getNombre()),Color.GREEN);
+//              Pintar.clickSobreNodo(jPanel1.getGraphics(), arboles.getCordeX(auxi.getNombre()), arboles.getCordeY(auxi.getNombre()), null,Color.GREEN);
+//             auxi=auxi.getPredecesor();
+//              System.out.println("ver");
+//             return 1;
+//             
+//          }  
+//         Pintar.clickSobreNodo(jPanel1.getGraphics(), arboles.getCordeX(nodoFin), arboles.getCordeY(nodoFin), null,Color.GREEN);     
+//          System.out.println("Clases.Algoritmo_Dijkstra.validar2()"+2); 
+//         return 2;
+//           }
+//           if(auxi.getPredecesor() != null){
+//            System.out.println("Clases.Algoritmo_Dijkstra.validar2()"+1); 
+//           return 1;
+//           }
+//     }
+//       else Pintar.clickSobreNodo(jPanel1.getGraphics(), arboles.getCordeX(nodoFin), arboles.getCordeY(nodoFin), null,Color.GREEN);
+//        System.out.println(""+1);
+//      return 1;
+       
+        
+   // }
     
-}
- 
+    }
+
 
