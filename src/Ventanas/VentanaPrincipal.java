@@ -133,6 +133,15 @@ public static int ingresarNodoOrigen(String nodoOrige, String noExiste,int tope)
         
         jDialog1.setLocationRelativeTo(null);
         
+       
+        
+        
+        
+        
+        
+        
+        
+        
     }    
     @SuppressWarnings("unchecked")
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
@@ -394,48 +403,36 @@ public static int ingresarNodoOrigen(String nodoOrige, String noExiste,int tope)
             jLabel5.setText(""+Dijkstra.getAcumulado());
             jLabel6.setText(""+permanente);
             jLabel1.setText(""+nodoFin);
-            if(nodoFin==1  && Dijkstra.validar()==false){
-               
-            }else{ 
-                
-                valor="/home/arahiza/NetBeansProjects/proyectofinal/imagenes/Catedral_Guadalajara.jpg";
+            
+            if(nodoFin==1  && Dijkstra.validar()==true && permanente!=nodoFin){
+               valor="/home/arahiza/NetBeansProjects/proyectofinal/imagenes/Catedral_Guadalajara.jpg";
                 titulo="Catedral de Guadalajara";
-                this.setEnabled(false);
-                new ver2().setVisible(true);
-            } 
-            if(nodoFin==2  && Dijkstra.validar()==false){
+                p n = new p(valor);
+                n.setVisible(true);
+            }
+             
+            if(nodoFin==2  && Dijkstra.validar()==true && permanente!=nodoFin){
+                valor="/home/arahiza/NetBeansProjects/proyectofinal/imagenes/loscolomos.png";
+                titulo="Catedral de Guadalajara";
+                p n = new p(valor);
+                n.setVisible(true);
+                
+                
+            }if(nodoFin==3  && Dijkstra.validar()==true && permanente!=nodoFin){
             
-            }else{
-                valor="";
-            }if(nodoFin==3  && Dijkstra.validar()==false){
+            }if(nodoFin==4  && Dijkstra.validar()==true && permanente!=nodoFin){
             
-            }else{
-                 valor="";
-            }if(nodoFin==4  && Dijkstra.validar()==false){
+            }if(nodoFin==5  && Dijkstra.validar()==true && permanente!=nodoFin){
             
-            }else{
-                 valor="";
-            }if(nodoFin==5  && Dijkstra.validar()==false){
+            }if(nodoFin==6  && Dijkstra.validar()==true && permanente!=nodoFin){
             
-            }else{
-                 valor="";
-            }if(nodoFin==6  && Dijkstra.validar()==false){
+            }if(nodoFin==7  && Dijkstra.validar()==true && permanente!=nodoFin){
             
-            }else{
-                 valor="";
-            }if(nodoFin==7  && Dijkstra.validar()==false){
+            }if(nodoFin==8  && Dijkstra.validar()==true && permanente!=nodoFin){
             
-            }else{
-                 valor="";
-            }if(nodoFin==8  && Dijkstra.validar()==false){
+            }if(nodoFin==9  && Dijkstra.validar()==true && permanente!=nodoFin){
             
-            }else{
-                 valor="";
-            }if(nodoFin==9  && Dijkstra.validar()==false){
-            
-            }else{
-                 valor="";
-            }if(nodoFin==0  && Dijkstra.validar()==false){
+            }if(nodoFin==0  && Dijkstra.validar()==true && permanente!=nodoFin){
             
             }else{
                 valor="";
