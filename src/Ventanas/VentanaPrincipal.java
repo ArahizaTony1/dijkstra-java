@@ -25,8 +25,7 @@ import javax.swing.JOptionPane;
  */
 public class VentanaPrincipal extends javax.swing.JFrame {
        public static String valor=null;
-
-       
+       public static String titulo=null;       
        
     /**
      * Creates new form VentanaPincipal
@@ -398,7 +397,11 @@ public static int ingresarNodoOrigen(String nodoOrige, String noExiste,int tope)
             if(nodoFin==1  && Dijkstra.validar()==false){
                
             }else{ 
-                valor="";
+                
+                valor="/home/arahiza/NetBeansProjects/proyectofinal/imagenes/Catedral_Guadalajara.jpg";
+                titulo="Catedral de Guadalajara";
+                this.setEnabled(false);
+                new ver2().setVisible(true);
             } 
             if(nodoFin==2  && Dijkstra.validar()==false){
             
