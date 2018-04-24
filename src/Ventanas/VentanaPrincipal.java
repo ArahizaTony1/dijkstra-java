@@ -24,6 +24,9 @@ import javax.swing.JOptionPane;
  * @author fredy_000
  */
 public class VentanaPrincipal extends javax.swing.JFrame {
+       public static String valor=null;
+
+       
        
     /**
      * Creates new form VentanaPincipal
@@ -306,7 +309,7 @@ public static int ingresarNodoOrigen(String nodoOrige, String noExiste,int tope)
        xxx=evt.getX();
        yyy=evt.getY();
        if(evt.isMetaDown()){
-           clicIzqSobreNodo(xxx, yyy );            
+           clicIzqSobreNodo(xxx, yyy );    //este metodo valida en la pantalla que se de un click  justamente en el nodo        
           if(nn==2){
               nn=0;
                Algoritmo_Dijkstra Dijkstra = new Algoritmo_Dijkstra(arboles,tope,permanente, nodoFin);
@@ -317,7 +320,14 @@ public static int ingresarNodoOrigen(String nodoOrige, String noExiste,int tope)
        }
        else{
        if(!cicDerechoSobreNodo(xxx,yyy)){// si  clik sobre  nodo es falso entra
-          if(tope<11){
+          if(tope<10){
+              
+              
+              
+              
+              
+              
+              
                arboles.setCordeX(tope,xxx);
                arboles.setCordeY(tope,yyy);
                arboles.setNombre(tope, tope);
@@ -386,7 +396,46 @@ public static int ingresarNodoOrigen(String nodoOrige, String noExiste,int tope)
             jLabel6.setText(""+permanente);
             jLabel1.setText(""+nodoFin);
             if(nodoFin==1  && Dijkstra.validar()==false){
-                System.out.println("prueba");
+               
+            }else{ 
+                valor="";
+            } 
+            if(nodoFin==2  && Dijkstra.validar()==false){
+            
+            }else{
+                valor="";
+            }if(nodoFin==3  && Dijkstra.validar()==false){
+            
+            }else{
+                 valor="";
+            }if(nodoFin==4  && Dijkstra.validar()==false){
+            
+            }else{
+                 valor="";
+            }if(nodoFin==5  && Dijkstra.validar()==false){
+            
+            }else{
+                 valor="";
+            }if(nodoFin==6  && Dijkstra.validar()==false){
+            
+            }else{
+                 valor="";
+            }if(nodoFin==7  && Dijkstra.validar()==false){
+            
+            }else{
+                 valor="";
+            }if(nodoFin==8  && Dijkstra.validar()==false){
+            
+            }else{
+                 valor="";
+            }if(nodoFin==9  && Dijkstra.validar()==false){
+            
+            }else{
+                 valor="";
+            }if(nodoFin==0  && Dijkstra.validar()==false){
+            
+            }else{
+                valor="";
             }
         }
     else JOptionPane.showMessageDialog(null,"Se deben de crear mas nodos ... ");

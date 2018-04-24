@@ -114,7 +114,7 @@ public class Algoritmo_Dijkstra {
           return false;
      }
        else Pintar.clickSobreNodo(jPanel1.getGraphics(), arboles.getCordeX(nodoFin), arboles.getCordeY(nodoFin), null,Color.GREEN);
-     return false;
+     return true;
     }
     
 }
