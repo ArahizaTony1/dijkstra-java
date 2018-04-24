@@ -274,7 +274,7 @@ public static int ingresarNodoOrigen(String nodoOrige, String noExiste,int tope)
 
         jLabel1.setFont(new java.awt.Font("Cabin", 0, 14)); // NOI18N
         getContentPane().add(jLabel1);
-        jLabel1.setBounds(750, 610, 51, 15);
+        jLabel1.setBounds(711, 610, 90, 15);
 
         jLabel2.setFont(new java.awt.Font("Cabin", 0, 14)); // NOI18N
         jLabel2.setText("Nodo Inicial");
@@ -306,7 +306,7 @@ public static int ingresarNodoOrigen(String nodoOrige, String noExiste,int tope)
 
         jLabel6.setFont(new java.awt.Font("Cabin", 0, 14)); // NOI18N
         getContentPane().add(jLabel6);
-        jLabel6.setBounds(530, 610, 51, 15);
+        jLabel6.setBounds(501, 610, 80, 15);
 
         setSize(new java.awt.Dimension(1002, 641));
         setLocationRelativeTo(null);
@@ -458,6 +458,8 @@ public static int ingresarNodoOrigen(String nodoOrige, String noExiste,int tope)
                 n.setVisible(true);
             }if(Dijkstra.validar()==false || permanente==nodoFin){
              JOptionPane.showMessageDialog(null,"Favor de revisar bien ");
+            jLabel6.setText("No se puede");
+            jLabel1.setText("No se puede");
             }
             
             
