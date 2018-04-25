@@ -52,10 +52,15 @@
                   <Component id="jButton1" min="-2" max="-2" attributes="0"/>
                   <EmptySpace min="-2" pref="24" max="-2" attributes="0"/>
               </Group>
-              <Group type="102" alignment="0" attributes="0">
+              <Group type="102" attributes="0">
                   <EmptySpace min="-2" pref="108" max="-2" attributes="0"/>
                   <Component id="jLabel2" min="-2" max="-2" attributes="0"/>
-                  <EmptySpace pref="283" max="32767" attributes="0"/>
+                  <EmptySpace max="32767" attributes="0"/>
+              </Group>
+              <Group type="102" alignment="1" attributes="0">
+                  <EmptySpace pref="175" max="32767" attributes="0"/>
+                  <Component id="jLabel4" min="-2" pref="95" max="-2" attributes="0"/>
+                  <EmptySpace min="-2" pref="172" max="-2" attributes="0"/>
               </Group>
           </Group>
         </DimensionLayout>
@@ -65,11 +70,13 @@
                   <EmptySpace max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="0" attributes="0">
                       <Component id="jButton1" alignment="0" min="-2" max="-2" attributes="0"/>
-                      <Component id="jLabel3" pref="45" max="32767" attributes="0"/>
+                      <Component id="jLabel3" pref="75" max="32767" attributes="0"/>
                   </Group>
+                  <EmptySpace min="-2" pref="10" max="-2" attributes="0"/>
+                  <Component id="jLabel4" min="-2" max="-2" attributes="0"/>
+                  <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                  <Component id="jLabel1" min="-2" pref="326" max="-2" attributes="0"/>
                   <EmptySpace max="-2" attributes="0"/>
-                  <Component id="jLabel1" pref="357" max="32767" attributes="0"/>
-                  <EmptySpace min="-2" max="-2" attributes="0"/>
                   <Component id="jLabel2" min="-2" max="-2" attributes="0"/>
                   <EmptySpace max="-2" attributes="0"/>
               </Group>
@@ -102,6 +109,14 @@
             <EventHandler event="mouseDragged" listener="java.awt.event.MouseMotionListener" parameters="java.awt.event.MouseEvent" handler="jLabel3MouseDragged"/>
             <EventHandler event="mousePressed" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="jLabel3MousePressed"/>
           </Events>
+        </Component>
+        <Component class="javax.swing.JLabel" name="jLabel4">
+          <Properties>
+            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+              <Font name="Carlito" size="18" style="1"/>
+            </Property>
+            <Property name="text" type="java.lang.String" value="Origen "/>
+          </Properties>
         </Component>
       </SubComponents>
     </Container>
