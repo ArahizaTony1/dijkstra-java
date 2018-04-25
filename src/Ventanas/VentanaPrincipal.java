@@ -133,7 +133,8 @@ public static int ingresarNodoOrigen(String nodoOrige, String noExiste,int tope)
         
         jDialog1.setLocationRelativeTo(null);
         
-       
+       p2 p = new p2();
+       p.setVisible(true);
         
         
         
