@@ -26,6 +26,73 @@ import javax.swing.JOptionPane;
 public class VentanaPrincipal extends javax.swing.JFrame {
        public static String valor=null;
        public static String titulo=null;       
+     
+       
+       public void origen(int nodo){
+       String imagen,titulos;
+       if(nodo==1){
+       imagen="/home/arahiza/NetBeansProjects/proyectofinal/imagenes/Catedral_Guadalajara.jpg";
+       titulos="Catedral de Guadalajara";
+       p2 p = new p2(imagen, titulos);
+       p.setVisible(true);
+       }
+       if(nodo==2){
+       imagen="/home/arahiza/NetBeansProjects/proyectofinal/imagenes/loscolomos.png";
+       titulos="Los colmos en Guadalajara";
+       p2 p = new p2(imagen, titulos);
+       p.setVisible(true);
+       }
+       if(nodo==3){
+       imagen="/home/arahiza/NetBeansProjects/proyectofinal/imagenes/mercado.jpg";
+       titulos="Mercado Principal";
+       p2 p = new p2(imagen, titulos);
+       p.setVisible(true);
+       }
+       if(nodo==4){
+       imagen="/home/arahiza/NetBeansProjects/proyectofinal/imagenes/museociudad.jpg";
+       titulos="Museo de la ciudad en Guadalajara";
+       p2 p = new p2(imagen, titulos);
+       p.setVisible(true);
+       }
+//       if(nodo==5){
+//       imagen="";
+//       titulo="";
+//       }
+//       if(nodo==6){
+//       imagen="";
+//       titulo="";
+//       }
+//       if(nodo==7){
+//       imagen="";
+//       titulo="";
+//       }
+//       if(nodo==8){
+//       imagen="";
+//       titulo="";
+//       }
+//       if(nodo==9){
+//       imagen="";
+//       titulo="";
+//       }
+//       if(nodo==0){
+//       imagen="";
+//       titulo="";
+//       }
+       
+       }
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
        
     /**
      * Creates new form VentanaPincipal
@@ -133,9 +200,8 @@ public static int ingresarNodoOrigen(String nodoOrige, String noExiste,int tope)
         
         jDialog1.setLocationRelativeTo(null);
         
-       p2 p = new p2();
-       p.setVisible(true);
-        
+      
+       
         
         
         
@@ -392,8 +458,10 @@ public static int ingresarNodoOrigen(String nodoOrige, String noExiste,int tope)
     }//GEN-LAST:event_jFileChooser2ActionPerformed
 
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
-
+   
     if(tope>=2){
+        String n1=null ;
+        String n2=null;
           permanente =  ingresarNodoOrigen("Ingrese Nodo Origen..","nodo Origen No existe",tope);// hacemos el llamano de la funcion         
           nodoFin =  ingresarNodoOrigen("Ingrese Nodo Fin..","nodo fin No existe",tope);
             Algoritmo_Dijkstra Dijkstra = new Algoritmo_Dijkstra(arboles,tope,permanente,nodoFin);
@@ -404,15 +472,17 @@ public static int ingresarNodoOrigen(String nodoOrige, String noExiste,int tope)
            
             if(nodoFin==1  && Dijkstra.validar()==true && permanente!=nodoFin){
                valor="/home/arahiza/NetBeansProjects/proyectofinal/imagenes/Catedral_Guadalajara.jpg";
-                titulo="Catedral de Guadalajara";
-                p n = new p(valor,titulo);
-                n.setVisible(true);
-                jLabel6.setText(""+permanente);
-                jLabel1.setText(""+nodoFin);
+               titulo="Catedral de Guadalajara";
+               origen(permanente);
+               p n = new p(valor,titulo);
+               n.setVisible(true);
+               jLabel6.setText(""+permanente);
+               jLabel1.setText(""+nodoFin);
             }
             if(nodoFin==2  && Dijkstra.validar()==true && permanente!=nodoFin){
                 valor="/home/arahiza/NetBeansProjects/proyectofinal/imagenes/loscolomos.png";
                 titulo="Los colmos en Guadalajara";
+                origen(permanente);
                 p n = new p(valor,titulo);
                 n.setVisible(true);
                 jLabel6.setText(""+permanente);
@@ -421,13 +491,15 @@ public static int ingresarNodoOrigen(String nodoOrige, String noExiste,int tope)
             if(nodoFin==3  && Dijkstra.validar()==true && permanente!=nodoFin){
                 valor="/home/arahiza/NetBeansProjects/proyectofinal/imagenes/mercado.jpg";
                 titulo="Mercado Principal";
-               p n = new p(valor,titulo);
+                origen(permanente);
+                p n = new p(valor,titulo);
                 n.setVisible(true);
                 jLabel6.setText(""+permanente);
                 jLabel1.setText(""+nodoFin);
             }if(nodoFin==4  && Dijkstra.validar()==true && permanente!=nodoFin){
                 valor="/home/arahiza/NetBeansProjects/proyectofinal/imagenes/museociudad.jpg";
                 titulo="Museo de la ciudad en Guadalajara";
+                origen(permanente);
                 p n = new p(valor,titulo);
                 n.setVisible(true);
                 jLabel6.setText(""+permanente);
@@ -435,6 +507,7 @@ public static int ingresarNodoOrigen(String nodoOrige, String noExiste,int tope)
             }if(nodoFin==5  && Dijkstra.validar()==true && permanente!=nodoFin){
                 valor="/home/arahiza/NetBeansProjects/proyectofinal/imagenes/museo.jpg";
                 titulo="Mercado Principal";
+                origen(permanente);
                 p n = new p(valor,titulo);
                 n.setVisible(true);
                 jLabel6.setText(""+permanente);
