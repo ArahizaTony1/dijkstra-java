@@ -26,58 +26,71 @@ import javax.swing.JOptionPane;
 public class VentanaPrincipal extends javax.swing.JFrame {
        public static String valor=null;
        public static String titulo=null;       
-     
+       public static String titulos=null;
+       public static String imagen2=null;
        
        public void origen(int nodo){
-       String imagen,titulos;
+       
        if(nodo==1){
-       imagen="/home/arahiza/NetBeansProjects/proyectofinal/imagenes/Catedral_Guadalajara.jpg";
+       imagen2="/home/arahiza/NetBeansProjects/proyectofinal/imagenes/Catedral_Guadalajara.jpg";
        titulos="Catedral de Guadalajara";
-       p2 p = new p2(imagen, titulos);
+       p2 p = new p2(imagen2, titulos);
        p.setVisible(true);
        }
        if(nodo==2){
-       imagen="/home/arahiza/NetBeansProjects/proyectofinal/imagenes/loscolomos.png";
+       imagen2="/home/arahiza/NetBeansProjects/proyectofinal/imagenes/loscolomos.png";
        titulos="Los colmos en Guadalajara";
-       p2 p = new p2(imagen, titulos);
+       p2 p = new p2(imagen2, titulos);
        p.setVisible(true);
        }
        if(nodo==3){
-       imagen="/home/arahiza/NetBeansProjects/proyectofinal/imagenes/mercado.jpg";
+       imagen2="/home/arahiza/NetBeansProjects/proyectofinal/imagenes/mercado.jpg";
        titulos="Mercado Principal";
-       p2 p = new p2(imagen, titulos);
+       p2 p = new p2(imagen2, titulos);
        p.setVisible(true);
        }
        if(nodo==4){
-       imagen="/home/arahiza/NetBeansProjects/proyectofinal/imagenes/museociudad.jpg";
+       imagen2="/home/arahiza/NetBeansProjects/proyectofinal/imagenes/museociudad.jpg";
        titulos="Museo de la ciudad en Guadalajara";
-       p2 p = new p2(imagen, titulos);
+       p2 p = new p2(imagen2, titulos);
        p.setVisible(true);
        }
-//       if(nodo==5){
-//       imagen="";
-//       titulo="";
-//       }
-//       if(nodo==6){
-//       imagen="";
-//       titulo="";
-//       }
-//       if(nodo==7){
-//       imagen="";
-//       titulo="";
-//       }
-//       if(nodo==8){
-//       imagen="";
-//       titulo="";
-//       }
-//       if(nodo==9){
-//       imagen="";
-//       titulo="";
-//       }
-//       if(nodo==0){
-//       imagen="";
-//       titulo="";
-//       }
+       if(nodo==5){
+       imagen2="/home/arahiza/NetBeansProjects/proyectofinal/imagenes/museo.jpg";
+       titulos="Museo Principal";
+       p2 p = new p2(imagen2, titulos);
+       p.setVisible(true);
+       }
+       if(nodo==6){
+       imagen2="/home/arahiza/NetBeansProjects/proyectofinal/imagenes/parquedos.jpg";
+       titulos="Parque ecologico";
+       p2 p = new p2(imagen2, titulos);
+       p.setVisible(true);
+       }
+       if(nodo==7){
+       imagen2="/home/arahiza/NetBeansProjects/proyectofinal/imagenes/periodismo.jpg";
+       titulos="Periodismo";
+       p2 p = new p2(imagen2, titulos);
+       p.setVisible(true);
+       }
+       if(nodo==8){
+       imagen2="/home/arahiza/NetBeansProjects/proyectofinal/imagenes/selvamagica.jpg";
+       titulos="Selva magica";
+       p2 p = new p2(imagen2, titulos);
+       p.setVisible(true);
+       }
+       if(nodo==9){
+       imagen2="/home/arahiza/NetBeansProjects/proyectofinal/imagenes/universidad.jpg";
+       titulos="Universidad Oficial de Guadalajara";
+       p2 p = new p2(imagen2, titulos);
+       p.setVisible(true);
+       }
+       if(nodo==0){
+       imagen2="/home/arahiza/NetBeansProjects/proyectofinal/imagenes/zologico.jpg";
+       titulos="Zoologico";
+       p2 p = new p2(imagen2, titulos);
+       p.setVisible(true);
+       }
        
        }
        
@@ -474,7 +487,7 @@ public static int ingresarNodoOrigen(String nodoOrige, String noExiste,int tope)
                valor="/home/arahiza/NetBeansProjects/proyectofinal/imagenes/Catedral_Guadalajara.jpg";
                titulo="Catedral de Guadalajara";
                origen(permanente);
-               p n = new p(valor,titulo);
+               p n = new p(valor,titulo,titulos);
                n.setVisible(true);
                jLabel6.setText(""+permanente);
                jLabel1.setText(""+nodoFin);
@@ -483,7 +496,7 @@ public static int ingresarNodoOrigen(String nodoOrige, String noExiste,int tope)
                 valor="/home/arahiza/NetBeansProjects/proyectofinal/imagenes/loscolomos.png";
                 titulo="Los colmos en Guadalajara";
                 origen(permanente);
-                p n = new p(valor,titulo);
+                p n = new p(valor,titulo,titulos);
                 n.setVisible(true);
                 jLabel6.setText(""+permanente);
                 jLabel1.setText(""+nodoFin);
@@ -492,7 +505,7 @@ public static int ingresarNodoOrigen(String nodoOrige, String noExiste,int tope)
                 valor="/home/arahiza/NetBeansProjects/proyectofinal/imagenes/mercado.jpg";
                 titulo="Mercado Principal";
                 origen(permanente);
-                p n = new p(valor,titulo);
+                p n = new p(valor,titulo,titulos);
                 n.setVisible(true);
                 jLabel6.setText(""+permanente);
                 jLabel1.setText(""+nodoFin);
@@ -500,50 +513,55 @@ public static int ingresarNodoOrigen(String nodoOrige, String noExiste,int tope)
                 valor="/home/arahiza/NetBeansProjects/proyectofinal/imagenes/museociudad.jpg";
                 titulo="Museo de la ciudad en Guadalajara";
                 origen(permanente);
-                p n = new p(valor,titulo);
+                p n = new p(valor,titulo,titulos);
                 n.setVisible(true);
                 jLabel6.setText(""+permanente);
                 jLabel1.setText(""+nodoFin);
             }if(nodoFin==5  && Dijkstra.validar()==true && permanente!=nodoFin){
                 valor="/home/arahiza/NetBeansProjects/proyectofinal/imagenes/museo.jpg";
-                titulo="Mercado Principal";
+                titulo="Museo Principal";
                 origen(permanente);
-                p n = new p(valor,titulo);
+                p n = new p(valor,titulo,titulos);
                 n.setVisible(true);
                 jLabel6.setText(""+permanente);
                 jLabel1.setText(""+nodoFin);
             }if(nodoFin==6  && Dijkstra.validar()==true && permanente!=nodoFin){
                 valor="/home/arahiza/NetBeansProjects/proyectofinal/imagenes/parquedos.jpg";
                 titulo="Parque ecologico";
-                p n = new p(valor,titulo);
+                origen(permanente);
+                p n = new p(valor,titulo,titulos);
                 n.setVisible(true);
                 jLabel6.setText(""+permanente);
                 jLabel1.setText(""+nodoFin);
             }if(nodoFin==7  && Dijkstra.validar()==true && permanente!=nodoFin){
                 valor="/home/arahiza/NetBeansProjects/proyectofinal/imagenes/periodismo.jpg";
                 titulo="Periodismo";
-                p n = new p(valor,titulo);
+                origen(permanente);
+                p n = new p(valor,titulo,titulos);
                 n.setVisible(true);
                 jLabel6.setText(""+permanente);
                 jLabel1.setText(""+nodoFin);
             }if(nodoFin==8  && Dijkstra.validar()==true && permanente!=nodoFin){
                 valor="/home/arahiza/NetBeansProjects/proyectofinal/imagenes/selvamagica.jpg";
                 titulo="Selva magica";
-                p n = new p(valor,titulo);
+                origen(permanente);
+                p n = new p(valor,titulo,titulos);
                 n.setVisible(true);
                 jLabel6.setText(""+permanente);
                 jLabel1.setText(""+nodoFin);
             }if(nodoFin==9  && Dijkstra.validar()==true && permanente!=nodoFin){
                 valor="/home/arahiza/NetBeansProjects/proyectofinal/imagenes/universidad.jpg";
                 titulo="Universidad Oficial de Guadalajara";
-                p n = new p(valor,titulo);
+                origen(permanente);
+                p n = new p(valor,titulo,titulos);
                 n.setVisible(true);
                 jLabel6.setText(""+permanente);
                 jLabel1.setText(""+nodoFin);
             }if(nodoFin==0  && Dijkstra.validar()==true && permanente!=nodoFin){
                 valor="/home/arahiza/NetBeansProjects/proyectofinal/imagenes/zologico.jpg";
                 titulo="Zoologico";
-                p n = new p(valor,titulo);
+                origen(permanente);
+                p n = new p(valor,titulo,titulos);
                 n.setVisible(true);
                 jLabel6.setText(""+permanente);
                 jLabel1.setText(""+nodoFin);

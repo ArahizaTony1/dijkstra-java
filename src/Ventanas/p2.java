@@ -27,6 +27,7 @@ public class p2 extends javax.swing.JFrame {
         Icon icono = new ImageIcon(imagen.getImage().getScaledInstance(jLabel1.getWidth(), jLabel1.getHeight(),Image.SCALE_DEFAULT));
         jLabel1.setIcon(icono);
         this.repaint();
+        jLabel2.setText("Su origen es : "+y);
     }
 
     private p2() {
